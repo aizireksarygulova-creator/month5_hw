@@ -6,5 +6,5 @@ class UserConfirmation(models.Model):
     code = models.CharField(max_length=6)
 
     def __str__(self):
-        return f"{self.user.username} - {self.password}"
+        return f"{self.user.username} - {self.code}"
     
